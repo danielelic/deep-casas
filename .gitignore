@@ -1,0 +1,5 @@
+venv/*
+dataset/*
+.idea/*
+*.csv
+*.h5
