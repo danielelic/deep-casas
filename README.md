@@ -1,6 +1,9 @@
 # deep-casas
 
 Deep learning and LSTM approaches for human activity recognition.
+
+This project has been included in the paper "A Sequential Deep Learning Application for Recognising Human Activities in Smart Homes" accepted for Neurocomputing journal.
+
 If you find this code useful, we encourage you to cite the paper. BibTeX:
 
 
@@ -21,10 +24,28 @@ If you find this code useful, we encourage you to cite the paper. BibTeX:
 The code has been tested on:
 
 * Python 3.5.2
-* Keras 2.2.2
-* TensorFlow 1.7.0
+* Keras 2.1.5
+* TensorFlow 1.3.0
 
 ## Data
 
+The `data.py` script loads some [CASAS datasets](http://casas.wsu.edu/datasets/) and saves them into NumPy binary format files `.npy` for faster loading later.
+```
+python data.py
+```
 
 ## Train
+
+```
+python train.py --v LSTM
+python train.py --v biLSTM
+python train.py --v Ensemble2LSTM
+python train.py --v CascadeEnsembleLSTM
+python train.py --v CascadeLSTM
+```
+
+## Authors
+
+* Daniele Liciotti | [GitHub](https://github.com/danielelic)
+* Michele Bernardini
+* Luca Romeo
